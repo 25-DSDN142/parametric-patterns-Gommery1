@@ -144,12 +144,23 @@ ellipse(100, 100, 75, 75);
 fill(8, 7, 7);
 triangle(85, 85, 115, 85, 100, 70); //up triangle
 triangle(85, 115, 115, 115, 100, 130); // down triangle 
-triangle(85, 85, 85, 115, 70, 100); 
-triangle(115, 85, 115, 115, 130, 100);
+triangle(85, 85, 85, 115, 70, 100); // left triangle 
+triangle(115, 85, 115, 115, 130, 100); // right triangle
 
 triangle(0, 0, 30, 0, 0, 30); // top left corner triangle
 triangle(200, 0, 170, 0, 200, 30); // to right corner triangle
-triangle(0, 200, 0, 170, 30, 200);
-triangle(200, 200, 170, 200, 200, 170);
+triangle(0, 200, 0, 170, 30, 200); // bottom left
+triangle(200, 200, 170, 200, 200, 170); // bottom right
+
+// CORNER CIRCLES 
+fill(255);
+ellipse(200, 200, 30, 30);
+ellipse(0, 0, 30, 30);
+ellipse(200, 0, 30, 30);
+ellipse(0, 200, 30, 30);
+
+
+
+
 
 }
