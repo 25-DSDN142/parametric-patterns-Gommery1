@@ -5,7 +5,7 @@ let rect_height = 30;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+ //pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
@@ -13,7 +13,7 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 function wallpaper_background() {
@@ -159,8 +159,42 @@ ellipse(0, 0, 30, 30);
 ellipse(200, 0, 30, 30);
 ellipse(0, 200, 30, 30);
 
+fill(8, 7, 7);
+// triangles on sides and bottom and top that will connect to make diamonds
+triangle(200, 110, 200, 130, 190, 120); // bottom right triangle
+triangle(0, 110, 0, 130, 10, 120); // bottom left triangle
+triangle(200, 70, 200, 90, 190, 80); // above right triangle
+triangle(0, 70, 0, 90, 10, 80); // above left triangle
 
+// Inner triangle square inside other triangle square
+triangle(90, 100, 100, 90, 90, 90); // top left
+triangle(100, 90, 110, 100, 110, 90); // top right
+triangle(90, 100, 100, 110, 90, 110); // bottom left
+triangle(100, 110, 110, 100, 110, 110); // bottom right
 
+// EVEN SMALLER TRIANGLE SQUARE INSIDE
+triangle(95, 100, 105, 100, 100, 95); // top 
+triangle(95, 100, 105, 100, 100, 105); //bottom
+triangle(100, 95, 100, 105, 95, 100); // left
+triangle (100, 95, 100, 105, 105, 100);
 
+// Final core centre ellipse
+fill(255);
+ellipse(100, 100, 2, 2);
 
+// ellipses that go in corner white circles that connect in pattern
+fill(8, 7, 7);
+ellipse(0, 0, Smallsize, Smallsize);
+ellipse(200, 200, Smallsize, Smallsize);
+ellipse(0, 200, Smallsize, Smallsize);
+ellipse(200, 0, Smallsize, Smallsize);
+
+//even smaller white circles that connect in pattern inside black circles
+fill(255);
+ellipse(0, 0, 10, 10);
+ellipse(200, 200, 10, 10);
+ellipse(0, 200, 10, 10);
+ellipse(200, 0, 10, 10);
 }
+
+
