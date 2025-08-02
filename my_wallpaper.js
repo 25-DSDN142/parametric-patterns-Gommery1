@@ -4,11 +4,11 @@ let rect_height = 30;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
- //pWallpaper.output_mode(GRID_WALLPAPER);
+ // pWallpaper.output_mode(DEVELOP_GLYPH);
+ pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -17,7 +17,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(255); // background colour white
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -161,11 +161,25 @@ ellipse(0, 200, 30, 30);
 
 fill(8, 7, 7);
 // triangles on sides and bottom and top that will connect to make diamonds
-triangle(200, 110, 200, 130, 190, 120); // bottom right triangle
-triangle(0, 110, 0, 130, 10, 120); // bottom left triangle
-triangle(200, 70, 200, 90, 190, 80); // above right triangle
-triangle(0, 70, 0, 90, 10, 80); // above left triangle
+triangle(200, 110, 200, 130, 190, 120); // horizontel bottom right triangle
+triangle(0, 110, 0, 130, 10, 120); // horizontel bottom left triangle
+triangle(200, 70, 200, 90, 190, 80); // horizontel above right triangle
+triangle(0, 70, 0, 90, 10, 80); // horizontel above left triangle
 
+triangle(70, 0, 90, 0, 80, 10); // top left
+triangle(110, 0, 130, 0, 120, 10); // top right
+triangle(70, 200, 90, 200, 80, 190); // bottom left
+triangle(110, 200, 130, 200, 120, 190) // bottom right
+
+fill(255);
+//ELIPSES INSIDE DIAMONDS MADE BY PATTERN
+//ellipse(200, 120, 5, 5); // horizontel right bottom
+//ellipse(0, 120, 5, 5); // horizentel left bottom
+//ellipse(200, 80, 5, 5); // right side top
+//ellipse(0, 80, 5, 5); // left side top
+
+
+fill(8, 7 ,7);
 // Inner triangle square inside other triangle square
 triangle(90, 100, 100, 90, 90, 90); // top left
 triangle(100, 90, 110, 100, 110, 90); // top right
