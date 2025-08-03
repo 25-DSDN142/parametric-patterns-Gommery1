@@ -7,7 +7,7 @@ function setup_wallpaper(pWallpaper) {
  // pWallpaper.output_mode(DEVELOP_GLYPH);
  pWallpaper.output_mode(GRID_WALLPAPER);
   
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -22,16 +22,11 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
-  
-  var Ellipsesize = 80;
-  
-  var InnerSize = 60;
-
-  var Mediumsize = 40; 
-
-  var Smallsize = 20;
-
-var cornercircles = 30;
+  var Ellipsesize = 5;
+  var InnerSize = 5;
+  var Mediumsize = 70; 
+  var Smallsize = 40;
+var cornercircles = 80;
 
 
 
@@ -40,8 +35,6 @@ var cornercircles = 30;
 noStroke();
 
 //body
-
-
 
 
 fill(8, 7, 7, 100) //background illusion black
