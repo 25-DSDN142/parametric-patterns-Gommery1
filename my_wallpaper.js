@@ -7,7 +7,7 @@ function setup_wallpaper(pWallpaper) {
  // pWallpaper.output_mode(DEVELOP_GLYPH);
  pWallpaper.output_mode(GRID_WALLPAPER);
   
-  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -22,11 +22,11 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
-  var Ellipsesize = 5;
-  var InnerSize = 5;
-  var Mediumsize = 70; 
-  var Smallsize = 40;
-var cornercircles = 80;
+  var Ellipsesize = 90;
+  var InnerSize = 87;
+  var Mediumsize = 0; 
+  var Smallsize = 10;
+var cornercircles = 0;
 
 
 

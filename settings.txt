@@ -10,13 +10,11 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+  var Ellipsesize = 80;
+  var InnerSize = 60;
+  var Mediumsize = 40; 
+  var Smallsize = 20;
+  var cornercircles = 30;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -24,9 +22,9 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
@@ -34,13 +32,12 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+ var Ellipsesize = 50;
+  var InnerSize = 30;
+  var Mediumsize = 20; 
+  var Smallsize = 50;
+var cornercircles = 50;
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -48,7 +45,170 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
+
+//////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+var Ellipsesize = 100;
+  var InnerSize = 70;
+  var Mediumsize = 40; 
+  var Smallsize = 30;
+var cornercircles = 20;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+ /////////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+var Ellipsesize = 120;
+  var InnerSize = 40;
+  var Mediumsize = 60; 
+  var Smallsize = 70;
+var cornercircles = 50;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+}
+
+
+//////////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+var Ellipsesize = 100;
+  var InnerSize = 70;
+  var Mediumsize = 40; 
+  var Smallsize = 30;
+var cornercircles = 20;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 160;
+}
+
+///////////////////////////
+Wallpaper 6:
+
+//your parameter variables go here!
+var Ellipsesize = 5;
+  var InnerSize = 5;
+  var Mediumsize = 70; 
+  var Smallsize = 40;
+var cornercircles = 80;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+///////////////////////////
+Wallpaper 7:
+
+//your parameter variables go here!
+  var Ellipsesize = 0;
+  var InnerSize = 20;
+  var Mediumsize = 50; 
+  var Smallsize = 40;
+var cornercircles = 0;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 80;
+}
+
+///////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+ var Ellipsesize = 90;
+  var InnerSize = 10;
+  var Mediumsize = 30; 
+  var Smallsize = 20;
+var cornercircles = 0;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+///////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!
+ var Ellipsesize = 90;
+  var InnerSize = 87;
+  var Mediumsize = 0; 
+  var Smallsize = 10;
+var cornercircles = 0;
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+
