@@ -30,6 +30,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   var Mediumsize = 40; 
 
   var Smallsize = 20;
+
+var cornercircles = 30;
+
+
+
+
+
 noStroke();
 
 //body
@@ -154,10 +161,10 @@ triangle(200, 200, 170, 200, 200, 170); // bottom right
 
 // CORNER CIRCLES 
 fill(255);
-ellipse(200, 200, 30, 30);
-ellipse(0, 0, 30, 30);
-ellipse(200, 0, 30, 30);
-ellipse(0, 200, 30, 30);
+ellipse(200, 200, cornercircles, cornercircles);
+ellipse(0, 0, cornercircles, cornercircles);
+ellipse(200, 0, cornercircles, cornercircles);
+ellipse(0, 200, cornercircles, cornercircles);
 
 fill(8, 7, 7);
 // triangles on sides and bottom and top that will connect to make diamonds
@@ -172,7 +179,7 @@ triangle(70, 200, 90, 200, 80, 190); // bottom left
 triangle(110, 200, 130, 200, 120, 190) // bottom right
 
 fill(255);
-//ELIPSES INSIDE DIAMONDS MADE BY PATTERN
+//ELIPSES INSIDE DIAMONDS MADE BY PATTERN                             DONT BRING BACK
 //ellipse(200, 120, 5, 5); // horizontel right bottom
 //ellipse(0, 120, 5, 5); // horizentel left bottom
 //ellipse(200, 80, 5, 5); // right side top
@@ -209,6 +216,20 @@ ellipse(0, 0, 10, 10);
 ellipse(200, 200, 10, 10);
 ellipse(0, 200, 10, 10);
 ellipse(200, 0, 10, 10);
+
+// IF statment for transparent triangles
+if (Ellipsesize > 70) {
+  fill(0 , 50); // black transparent
+  triangle(100, 0, 0, 100, 200, 100);
+}
+
+if(Ellipsesize > 70) {
+fill(0, 50);
+triangle(100, 200, 0, 100, 200, 100);
+
+}
+
+
 }
 
 
